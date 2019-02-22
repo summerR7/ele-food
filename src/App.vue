@@ -24,6 +24,7 @@ export default {
 
     .ele-main {
       flex: 1;
+      overflow: hidden;
       padding-bottom: 13.3vw;
     }
   }

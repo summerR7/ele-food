@@ -159,13 +159,13 @@ export default {
 
     this.$http.getBanners()
       .then(res => {
-        this.banners = res.banners
+        this.banners = res.data.data.banners
         this.$nextTick()
           .then(this.initSwiper)
       })
   },
   mounted () {
-    this.initSwiper()
+
   },
   methods: {
     initSwiper () {
