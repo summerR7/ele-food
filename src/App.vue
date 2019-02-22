@@ -21,5 +21,10 @@ export default {
     height: 100%;
     display: flex;
     flex-direction: column;
+
+    .ele-main {
+      flex: 1;
+      padding-bottom: 13.3vw;
+    }
   }
 </style>

@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'iconfont';  /* project id 1052950 */
-  src: url('//at.alicdn.com/t/font_1052950_5ghx5epeztm.eot');
-  src: url('//at.alicdn.com/t/font_1052950_5ghx5epeztm.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_1052950_5ghx5epeztm.woff2') format('woff2'),
-  url('//at.alicdn.com/t/font_1052950_5ghx5epeztm.woff') format('woff'),
-  url('//at.alicdn.com/t/font_1052950_5ghx5epeztm.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_1052950_5ghx5epeztm.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_1052950_4859subhjfx.eot');
+  src: url('//at.alicdn.com/t/font_1052950_4859subhjfx.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1052950_4859subhjfx.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1052950_4859subhjfx.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1052950_4859subhjfx.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1052950_4859subhjfx.svg#iconfont') format('svg');
 }
 
 html, body, div, span, applet, object, iframe,
@@ -50,6 +50,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+a {
+  text-decoration: none;
+  color: #333;
+}
 
 html,
 body {
@@ -59,6 +63,8 @@ body {
 
 html {
   color: #333;
-  font-family: 'Helvetica Neue',Tahoma,Arial,PingFangSC-Regular,'Hiragino Sans GB','Microsoft Yahei',sans-serif;
-  line-height: 1.2;
+  font-family: -apple-system, BlinkMacSystemFont,
+  "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+  "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
 }

@@ -1,25 +1,30 @@
 import axios from 'axios'
-import { Toast } from 'mint-ui'
+import { Indicator, Toast } from 'mint-ui'
 
-const ajax = axios.create({
-  baseURL: ''
-})
+const ajax = axios.create()
 
 // axios拦截器
-let toast = null
 ajax.interceptors.request.use((config) => {
-  toast = Toast({
-    message: '加载中...',
-    position: 'bottom',
-    duration: 5000
-  })
+  Indicator.open('加载中...')
+  // config.data = {
+  //   ...config.data
+  //   authToken: window.localStorage.getItem('mob-token')
+  // }
   return config
 })
-ajax.interceptors.response.use((resp) => {
-  toast.close()
-  return resp
+ajax.interceptors.response.use((res) => {
+  Indicator.close()
+  if (res.data.code === 200) {
+    return res.data.data
+  } else {
+    Toast({
+      message: '请检查网络',
+      duration: 1500
+    })
+  }
 })
 
-export const getPost = () => {
-  return ajax.get('')
+// 首页轮播广告接口
+export const getBanners = () => {
+  return ajax.get('http://www.xiongmaoyouxuan.com/api/tab/1?start=0')
 }

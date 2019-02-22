@@ -1,5 +1,5 @@
 // 页面组件
-import Home from '@/pages/Home.vue'
+import Home from '@/pages/Home/Home.vue'
 import Seller from '@/pages/Seller.vue'
 import Order from '@/pages/Order.vue'
 import Mine from '@/pages/Mine.vue'
